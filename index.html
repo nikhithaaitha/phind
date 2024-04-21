@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Platform</title>
+    <style>
+        body {
+            background-color: #f0e68c; /* Light yellow background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffd700; /* Gold background */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .recipe-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .recipe-card {
+            background-color: #ffffff; /* White background */
+            border: 1px solid #000000; /* Black border */
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+        }
+        .recipe-card h2 {
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #ffd700; /* Gold background */
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        form button {
+            background-color: #008000; /* Green background */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Sharing Platform</h1>
+        <button>Home</button>
+        <button>Cuisines</button>
+        <button>Submit Recipe</button>
+    </header>
+
+    <section class="recipe-section">
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+            <h2>Italian Pasta</h2>
+            <p>A delicious Italian pasta recipe.</p>
+        </div>
+        <div class="recipe-card">
+            <img src="https://via.placeholder.com/300x200" alt="Recipe Image">
+            <h2>Chinese Dumplings</h2>
+            <p>Authentic Chinese dumplings recipe.</p>
+        </div>
+        <!-- Add more recipe cards as needed -->
+    </section>
+
+    <footer>
+        &copy; 2023 Recipe Sharing Platform. All rights reserved.
+    </footer>
+
+    <form>
+        <h2>Submit Your Recipe</h2>
+        <input type="text" id="recipeName" name="recipeName" placeholder="Recipe Name">
+        <textarea id="recipeDescription" name="recipeDescription" placeholder="Recipe Description"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript for form submission or any interactive elements
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            // Add your form submission logic here
+            alert('Recipe submitted!');
+        });
+    </script>
+</body>
+</html>
